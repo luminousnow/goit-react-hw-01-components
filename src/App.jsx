@@ -4,25 +4,29 @@ import Statistics from './components/statistics/Statistics';
 import Friends from './components/friends/FriendList';
 import Transaction from './components/transaction/TransactionHistory';
 
-import users from './json/user.json';
-import statistics from './json/statistical-data.json';
+import user from './json/user.json';
+import statisticalData from './json/statistical-data.json';
 import friends from './json/friends.json';
 import transactions from './json/transactions.json';
 
 function App() {
   return (
     <div className="App">
+      {/* // Задание 1 - Профиль социальной сети */}
       <Profile
-        name={users.name}
-        tag={users.tag}
-        location={users.location}
-        avatar={users.avatar}
-        stats={users.stats}
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
       />
+
       {/* // Задание 2 - Секция статистики const */}
-      {/* <Statistics /> */}
+      <Statistics title="Upload stats" stats={statisticalData} />
+
       {/* // Задание 3 - Список друзей */}
       {/* <Friends /> */}
+
       {/* // Задание 4 - История транзакций */}
       {/* <Transaction /> */}
     </div>

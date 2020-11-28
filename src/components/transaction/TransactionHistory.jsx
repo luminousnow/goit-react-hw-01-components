@@ -2,7 +2,7 @@ import './TransactionHistory.css';
 
 export default function TransactionHistory({ id, type, amount, currency }) {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
