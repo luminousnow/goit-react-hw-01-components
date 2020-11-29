@@ -6,7 +6,7 @@ export default function Statistics({ title, stats }) {
   console.log();
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
+      {title && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
         {stats.map(el => (
@@ -23,5 +23,9 @@ export default function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: propTypes.string,
-  stats: propTypes.arrayOf(propTypes.shape).isRequired,
+  stats: propTypes.arrayOf(
+    propTypes.shape({
+      key: propTypes.string,
+    }),
+  ).isRequired,
 };

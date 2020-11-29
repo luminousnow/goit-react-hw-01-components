@@ -23,6 +23,7 @@ function App() {
 
       {/* // Задание 2 - Секция статистики const */}
       <Statistics title="Upload stats" stats={statisticalData} />
+      {/* <Statistics stats={statisticalData} /> */}
 
       {/* // Задание 3 - Список друзей */}
       {/* <Friends /> */}
