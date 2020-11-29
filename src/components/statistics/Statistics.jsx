@@ -1,8 +1,7 @@
 import propTypes from 'prop-types';
-import './Statistics.css';
+import s from './Statistics.module.css';
 
 export default function Statistics({ title, stats }) {
-  console.log();
   return (
     <section className="statistics">
       {/* Перевірка якщо title не прийшов */}
