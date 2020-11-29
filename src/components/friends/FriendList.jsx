@@ -4,9 +4,9 @@ import s from './FriendList.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={s.friendList}>
       {friends.map(el => (
-        <li className="item" key={el.id}>
+        <li className={s.item} key={el.id}>
           <FriendListItem
             avatar={el.avatar}
             name={el.name}
@@ -14,7 +14,6 @@ export default function FriendList({ friends }) {
           />
         </li>
       ))}
-      {/* <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве --> */}
     </ul>
   );
 }

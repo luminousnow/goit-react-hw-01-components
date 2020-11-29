@@ -26,7 +26,7 @@ function App() {
       {/* // Задание 3 - Список друзей */}
       <FriendList friends={friends} />
       {/* // Задание 4 - История транзакций */}
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 }

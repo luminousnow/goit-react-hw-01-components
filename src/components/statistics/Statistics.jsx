@@ -4,22 +4,18 @@ import getRundomColor from './get-rundom-hex-color';
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
+    <section className={s.statistics}>
       {/* Перевірка якщо title не прийшов */}
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+      {title && <h2 className={s.title}>{title}</h2>}
+      <ul className={s.statList}>
         {stats.map(el => (
           <li
             className={s.item}
             key={el.id}
             style={{ backgroundColor: getRundomColor() }}
           >
-            <span className="label">{el.label}</span>
-            <span className="percentage">{el.percentage}%</span>
-            <p>
-              Цвет фона элемента статистики в оформлении можно пропустить, либо
-              создать функцию для генерации случайного цвета.
-            </p>
+            <span className={s.label}>{el.label}</span>
+            <span className={s.percentage}>{el.percentage}%</span>
           </li>
         ))}
       </ul>
