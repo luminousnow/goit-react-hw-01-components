@@ -1,5 +1,5 @@
-import './Statistics.css';
 import propTypes from 'prop-types';
+import './Statistics.css';
 
 export default function Statistics({ title, stats }) {
   console.log();
@@ -12,6 +12,10 @@ export default function Statistics({ title, stats }) {
           <li className="item" key={el.id}>
             <span className="label">{el.label}</span>
             <span className="percentage">{el.percentage}%</span>
+            <p>
+              Цвет фона элемента статистики в оформлении можно пропустить, либо
+              создать функцию для генерации случайного цвета.
+            </p>
           </li>
         ))}
       </ul>
