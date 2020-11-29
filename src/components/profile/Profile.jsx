@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import defaultImg from '../../img/default-avatar.svg';
+import defaultImg from './default-avatar.svg';
 import './Profile.css';
 
 export default function Profile({
@@ -40,7 +40,7 @@ Profile.propTypes = {
   name: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
-  avatar: propTypes.string.isRequired,
+  avatar: propTypes.string,
   stats: propTypes.shape({
     followers: propTypes.number.isRequired,
     views: propTypes.number.isRequired,
