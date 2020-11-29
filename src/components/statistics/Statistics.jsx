@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import s from './Statistics.module.css';
+import getRundomColor from './get-rundom-hex-color';
 
 export default function Statistics({ title, stats }) {
   return (
@@ -8,7 +9,11 @@ export default function Statistics({ title, stats }) {
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(el => (
-          <li className="item" key={el.id}>
+          <li
+            className={s.item}
+            key={el.id}
+            style={{ backgroundColor: getRundomColor() }}
+          >
             <span className="label">{el.label}</span>
             <span className="percentage">{el.percentage}%</span>
             <p>
