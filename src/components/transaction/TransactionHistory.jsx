@@ -32,6 +32,6 @@ TransactionHistory.propTypes = {
   items: propTypes.arrayOf(
     propTypes.shape({
       id: propTypes.string.isRequired,
-    }).isRequired,
-  ).isRequired,
+    }),
+  ),
 };

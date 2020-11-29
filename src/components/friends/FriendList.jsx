@@ -23,6 +23,6 @@ FriendList.propTypes = {
   friends: propTypes.arrayOf(
     propTypes.shape({
       id: propTypes.number.isRequired,
-    }).isRequired,
-  ).isRequired,
+    }),
+  ),
 };
