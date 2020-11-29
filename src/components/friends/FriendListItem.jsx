@@ -1,16 +1,18 @@
 import propTypes from 'prop-types';
-import './FriendList.css';
+import s from './FriendList.module.css';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <>
-      <span className="status">{isOnline ? 'online :)' : ':( offline'}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
-      <p>
-        В зависимости от пропа isOnline, должен меняться цвет фона span.status.
-        Это можно сделать через разный CSS-класс или Styled Components.
-      </p>
+      <span
+        className={s.status}
+        style={{
+          backgroundColor: isOnline ? 'green' : 'red',
+        }}
+      ></span>
+
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
     </>
   );
 }
