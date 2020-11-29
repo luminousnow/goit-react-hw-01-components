@@ -2,7 +2,7 @@ import './App.css';
 import Profile from './components/profile/Profile';
 import Statistics from './components/statistics/Statistics';
 import FriendList from './components/friends/FriendList';
-import Transaction from './components/transaction/TransactionHistory';
+import TransactionHistory from './components/transaction/TransactionHistory';
 
 import user from './json/user.json';
 import statisticalData from './json/statistical-data.json';
