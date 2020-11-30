@@ -1,0 +1,47 @@
+.statistics {
+  display: flexbox;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 330px;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: large;
+  text-transform: uppercase;
+  color: darkslategray;
+}
+
+.statList {
+  display: flex;
+}
+
+.item {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.label {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+
+  font-size: smaller;
+  color: aliceblue;
+}
+
+.percentage {
+  display: flex;
+  height: 50%;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: aliceblue;
+}

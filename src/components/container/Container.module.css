@@ -1,6 +1,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+
+  background-color: white;
 }
 
 @media screen and (min-width: 320px) {

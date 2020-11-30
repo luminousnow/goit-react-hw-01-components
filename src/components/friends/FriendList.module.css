@@ -1,6 +1,29 @@
+.friendList {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 330px;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  margin: 15px 0px;
+  padding: 5px;
+  align-items: center;
+  border: 1px solid #808080;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
 .status {
+  margin: 0px 10px;
   display: inline-block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.avatar {
+  margin: 0px 10px;
+  border-radius: 10%;
 }
