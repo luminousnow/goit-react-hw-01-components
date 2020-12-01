@@ -3,7 +3,7 @@ import s from './FriendList.module.css';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <>
+    <li className={s.item}>
       <span
         className={s.status}
         style={{
@@ -13,7 +13,7 @@ export default function FriendListItem({ avatar, name, isOnline }) {
 
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
-    </>
+    </li>
   );
 }
 
